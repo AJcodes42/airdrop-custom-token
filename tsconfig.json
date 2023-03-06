@@ -11,6 +11,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "resolveJsonModule": true,  
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -19,11 +20,25 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+  //   "paths" : {
+  //     "crypto": ["./node_modules/crypto-browserify"],
+  //     "stream": ["./node_modules/stream-browserify"],
+  //     "assert": ["./node_modules/assert"],
+  //     "http": ["./node_modules/stream-http"],
+  //     "https": ["./node_modules/https-browserify"],
+  //     "os": ["./node_modules/os-browserify"],
+  //     "process": ["./node_modules/process"],
+  // }
   },
+  // "files": [
+  //   "src/main.ts",
+  //   "src/polyfills.ts"
+  // ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
